@@ -15,7 +15,7 @@ export const BRANDING = {
   tagline_en: 'Destiny Defined, Strategy Refined'
 };
 
-export const AVATARS = Array.from({ length: 36 }, (_, i) => `input_file_${i}.png`);
+export const AVATARS = Array.from({ length: 36 }, (_, i) =>`/avatars/${i}.jpg`);
 
 export const MYSTIC_TRIALS: MysticTrial[] = [
   {
