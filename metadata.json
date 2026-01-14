@@ -1,0 +1,8 @@
+{
+  "name": "Boyi Qiankun - Poker Scoring & Mystic Fortune",
+  "description": "A comprehensive poker game scoring app that blends precise point tracking with traditional Chinese I-Ching, Five Elements, and Lunar calendar wisdom for a unique gaming experience.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
