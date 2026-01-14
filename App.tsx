@@ -248,7 +248,10 @@ const App: React.FC = () => {
   const handleAddRound = (scores: Record<string, number>) => {
     if (!session) return;
     const ns = { ...session, rounds: [...session.rounds, { id: Math.random().toString(36).substr(2,9), timestamp: Date.now(), scores }] };
-    setSession(ns); getMysticAnalysis(scores, lang).then(setMysticComment);
+    setSession(ns);
+getMysticAnalysis(scores, lang === Language.ZH ? "zh" : "en")
+  .then(setMysticComment)
+  .catch(console.error);
   };
 
   const finishGame = (save: boolean) => {
